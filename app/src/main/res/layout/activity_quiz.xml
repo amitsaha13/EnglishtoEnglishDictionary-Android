@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_weight="1"
+            android:text="Question"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <RadioButton
+                android:id="@+id/optiona"
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="option A" />
+
+            <RadioButton
+                android:id="@+id/optionb"
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="option B" />
+
+            <RadioButton
+                android:id="@+id/optionc"
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="option C" />
+
+            <RadioButton
+                android:id="@+id/optiond"
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="option D" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submitanswer"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Submit"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.2"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
